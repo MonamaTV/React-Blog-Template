@@ -1,0 +1,72 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.footer-topics,
+.footer-header,
+.footer-subs {
+  margin: 10px;
+}
+
+.footer-header h1 {
+  color: rgb(9, 68, 83);
+  height: 40px;
+  font-family: "Yellowtail", cursive;
+}
+
+.footer-topics ul {
+  margin: 10px;
+  list-style: none;
+}
+.footer-topics ul li {
+  font-size: 12px;
+  padding: 2px;
+  text-transform: uppercase;
+}
+
+.footer-subs input {
+  border: 1.5px solid rgb(9, 68, 83);
+  outline: none;
+  padding: 8px;
+  caret-color: salmon;
+  color: rgb(9, 68, 83);
+  background: inherit;
+}
+.footer-subs button {
+  border: none;
+  outline: none;
+  padding: 9.6px;
+  color: #fff;
+  background: rgb(9, 68, 83);
+}
+.footer-subs button:hover {
+  cursor: pointer;
+  transition: background 200ms ease-in-out;
+  background: rgb(9, 102, 126);
+}
+.follow-us {
+  margin: 10px;
+}
+.follow-us a {
+  padding: 10px;
+}
+.whatsapp-a {
+  color: #25d366;
+}
+.facebook-a {
+  text-decoration: none;
+  color: #4267b2 !important;
+}
+
+.twitter-a {
+  color: #1da1f2;
+}
+.facebook-a,
+.twitter-a,
+.whatsapp-a {
+  font-size: 20px;
+}

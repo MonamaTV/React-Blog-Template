@@ -1,0 +1,125 @@
+.post-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px #382c2c11 solid;
+  margin: 10px 0;
+  overflow: hidden;
+}
+/* If shits go south way, comeback here 😂😂 */
+.post-image {
+  /* height: 90px; */
+}
+.post-image img {
+  width: 100px;
+  transition: transform 0.5s ease-in-out;
+  height: 90%;
+}
+.post-image img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.post-card .post-body {
+  padding: 5px;
+  float: left;
+}
+.post-body h5 {
+  font-size: 13px;
+  font-weight: 500;
+
+  text-transform: capitalize;
+}
+.post-body h5 a {
+  color: rgba(0, 0, 0, 0.781);
+  text-decoration: none;
+}
+.post-body h5 a:hover {
+  color: salmon;
+  text-decoration: underline;
+}
+/* Main post */
+.main-post {
+  margin: 95px 0 30px 0;
+}
+.tags {
+  font-size: 10px;
+  color: rgba(98, 53, 48, 0.377);
+}
+.time-tag {
+  font-size: 10px;
+  padding: 4px;
+  color: rgba(98, 53, 48, 0.377);
+}
+.main-post-image img {
+  width: 100%;
+  height: 250px;
+}
+.main-post .post-body {
+  text-transform: capitalize;
+  margin: 0 10px;
+  padding: 10px;
+}
+.main-post .post-body small {
+  font-size: 12px;
+}
+.main-post .post-body a {
+  color: salmon;
+  font-size: 12px;
+  margin: 0 10px;
+}
+/* The Blogpost */
+.blog-post-image img {
+  width: 100%;
+}
+.blog-post-title {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.blog-post-body {
+  padding: 5px 20px;
+}
+.share-post,
+.comments-container,
+.posts-conainer {
+  margin: 30px 0;
+  padding: 5px 20px;
+}
+.blog-post-container .posts-container {
+  margin: 0 20px !important;
+}
+.comments-container button {
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  color: hsl(220, 46%, 48%);
+  cursor: pointer;
+}
+.p-block {
+  text-decoration: underline;
+  margin: 0 20px;
+  grid-column-end: inherit;
+}
+.share-post p {
+  border: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.share-post small {
+  padding: 4px;
+  margin: 4px;
+  color: #fff;
+}
+.facebook-btn {
+  background-color: #4267b2;
+}
+.whatsapp-btn {
+  background-color: #25d366;
+}
+.twitter-btn {
+  background-color: #1da1f2;
+}

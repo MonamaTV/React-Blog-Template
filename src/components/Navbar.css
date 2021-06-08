@@ -1,0 +1,102 @@
+.my-navbar {
+  position: fixed;
+  top: 0;
+  padding: 30px;
+  height: 95px;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(9, 68, 83);
+  font-family: "Yellowtail", cursive;
+}
+.navbar-logo > * {
+  color: rgb(9, 68, 83);
+  text-decoration: none;
+}
+.activeNav {
+  border-left: 3px salmon solid;
+}
+.menu-button {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 30px;
+  color: rgb(9, 68, 83);
+}
+.nav-item .menu-button {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.search {
+  margin-right: 15px;
+}
+.show-desktop-menu.nav-menu {
+  list-style: none;
+  padding: 10px;
+}
+.show-desktop-menu.nav-menu li {
+  display: inline;
+  padding: 20px 15px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.show-desktop-menu .nav-item > * {
+  color: rgb(9, 68, 83);
+}
+/* The styling gets tricked when the right width is met 👍 */
+.show-mobile-menu {
+  background-color: rgb(9, 68, 83);
+  color: #fff;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  list-style: none;
+  margin: 95px auto;
+  width: 0%;
+  text-align: left;
+  height: 100vmax;
+  transition: width 0.5s ease;
+  box-shadow: 1px 1px 0.55rem rgba(0, 0, 0, 0.74);
+}
+.nav-item {
+  padding: 10px;
+  font-size: 10px;
+  margin: 3px 5px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.055);
+}
+
+.nav-item > * {
+  text-decoration: none;
+}
+.show-mobile-menu .nav-item > * {
+  color: #fff;
+}
+
+.show-mobile-menu .menu-items {
+  margin-top: 70px;
+}
+.show-menu {
+  width: 50%;
+}
+.hide {
+  display: none;
+}
+.nav-item.subs button,
+.nav-item.subs {
+  background-color: salmon;
+  color: #fff !important;
+  padding: 5px !important;
+}

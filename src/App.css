@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*::selection {
+  background-color: salmon;
+  color: #fff;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&family=Yellowtail&display=swap");
+body,
+html {
+  background-color: #c8c8c805;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+.posts-container,
+.footer-container {
+  margin-top: 120px;
+
+  margin: 5px 20px 10px 10px;
+}
+.blog-post-container,
+.books-container {
+  margin-top: 90px;
+}
+.share-buttons {
+  margin: 10px;
+}
+.share-buttons a {
+  padding: 10px;
+  color: rgba(5, 24, 29, 0.589);
+}
+.blog-post-content p::first-letter {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.main-container button {
+  padding: 10px 40px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  border-radius: 30px;
+  background-color: salmon;
+  box-shadow: 1px 1px 0.55rem rgba(195, 70, 70, 0.301);
+  cursor: pointer;
+  margin: 10px 20px 40px 20px;
+}
+.main-container button:hover {
+  transition: all 200ms ease-in-out;
+  transform: translateY(-2px);
+  background-color: rgb(243, 101, 85);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* The media */
+@media (min-width: 476px) {
+  .posts-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .post-card {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    padding: 10px;
+  }
+  .post-card .post-image img {
+    width: 100%;
+    height: 150px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 700px) {
+  .modal-container form {
+    width: 50% !important;
   }
-  to {
-    transform: rotate(360deg);
+  .main-container,
+  .blog-post-container {
+    margin: 10px auto !important;
+    width: 1000px;
+    background: #fff;
+    box-shadow: 1px 1px 0.55rem rgba(0, 0, 0, 0.041);
+  }
+  .footer-container {
+    margin: 60px auto 10px auto !important;
+    width: 1000px;
+    font-weight: 300;
+  }
+  .main-post .post-body h4 {
+    font-size: 30px;
+  }
+  .main-post-image img {
+    width: 100% !important;
+    height: 350px !important;
+  }
+  .posts-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .post-card {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    padding: 10px;
+  }
+  .post-card .post-image img {
+    width: 100%;
+    height: 150px;
+  }
+  /* Button footer */
+  .footer-subs input {
+    width: 400px;
+  }
+  /* The blog post */
+  .blog-post-container .blog-post-body {
+    padding: 0 20% 10px 20px;
+  }
+  .blog-post-container .blog-post-image img {
+    height: 500px;
   }
 }

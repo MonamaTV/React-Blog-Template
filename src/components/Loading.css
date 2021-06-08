@@ -1,0 +1,26 @@
+.loading {
+  color: rgb(9, 68, 83);
+
+  font-family: "Yellowtail", cursive;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.load {
+  position: relative;
+  right: 80px;
+  border-top: 10px solid salmon;
+  width: 120px;
+  border-radius: 50%;
+  height: 120px;
+  animation: spinning infinite 2s linear;
+}
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
